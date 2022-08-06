@@ -6,14 +6,14 @@ pipeline {
     maven 'maven'
   }
   
- /* environment {
+  environment {
 
       sonar_url = 'http://172.31.93.142:9000'
       sonar_username = 'admin'
       sonar_password = 'admin'
       nexus_url = '172.31.93.142:8081'
       artifact_version = '4.0.0'
-*/
+
  }
  parameters {
       string(defaultValue: 'master', description: 'Please type any branch name to deploy', name: 'Branch')
