@@ -26,12 +26,12 @@ stages {
         url: 'https://github.com/chinni4321/helloworld.git'
       }
     }
-    /*stage('Maven build'){
+    stage('Maven build'){
       steps {
         sh 'mvn clean install'
       }
     }
-  stage ('Sonarqube Analysis'){
+  /*stage ('Sonarqube Analysis'){
            steps {
            withSonarQubeEnv('sonarqube') {
            sh '''
