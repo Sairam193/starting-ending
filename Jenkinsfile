@@ -16,7 +16,7 @@ pipeline {
 
  }
  parameters {
-      string(defaultValue: 'master', description: 'Please type any branch name to deploy', name: 'Branch')
+      string(defaultValue: 'main', description: 'Please type any branch name to deploy', name: 'Branch')
  }  
 
 stages {
