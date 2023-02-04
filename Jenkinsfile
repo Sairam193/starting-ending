@@ -71,7 +71,7 @@ stage ('Docker Build') {
 	'''
 	}
 	}
-/* 
+
 stage('Docker publish') {                         
     steps {
     script {
@@ -81,7 +81,7 @@ stage('Docker publish') {
        }
       }
      }
-*/
+
 
  stage('Building image') {
     steps{
@@ -106,9 +106,9 @@ stage('Remove Unused docker image') {
          sh "docker rmi $imagename:$BUILD_NUMBER"
          sh "docker rmi $imagename:latest"
        }
-      } */
+      } 
 
-
+*/
 
     }
 
