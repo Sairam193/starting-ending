@@ -61,10 +61,10 @@ stages {
           nexusArtifactUploader artifacts: [[artifactId: 'hello-world-war', classifier: '', file: "/var/lib/jenkins/workspace/pipeline1/target/hello-world-war-1.0.0.war", type: 'war']], credentialsId: 'nexus-cred', groupId: 'com.efsavage', nexusUrl: "${nexus_url}", nexusVersion: 'nexus3', protocol: 'http', repository: 'release', version: "${artifact_version}"
          archiveArtifacts '**/*.war'
         }
-      }
+      } */
 
 
-stage ('Docker Build') {
+/* stage ('Docker Build') {
 	steps {
 	sh '''
 	docker build -t 445194754454.dkr.ecr.us-east-1.amazonaws.com/ram-helloworld:latest --file=Dockerfile ${WORKSPACE} 
